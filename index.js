@@ -55,7 +55,7 @@ async function addEvent(event) {
 
   let name = addEventsList.name.value
   let description = addEventsList.description.value
-  let date = addEventsList.date.value
+  let date = addEventsList.date.value + ":00.000Z"
   let location = addEventsList.location.value
 
   const response = await fetch (API_URL, {
